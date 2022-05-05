@@ -16,4 +16,4 @@ var n,t=arguments[3],r=require("buffer").Buffer;(function(){var r,e=200,u="Unsup
 },{"buffer":"dskh"}],"TTyb":[function(require,module,exports) {
 "use strict";var e=require("lodash");const t="feedback-form-state",a={form:document.querySelector(".feedback-form"),input:document.querySelector('input[type="email"]'),textarea:document.querySelector('textarea[name="message"]')};function r(e){e.preventDefault();const a=JSON.parse(localStorage.getItem(t)),r=e.currentTarget.email.value,l=e.currentTarget.message.value;if(""===r||""===l)return alert("Please fill in all  the fields!");a&&console.log(a),e.currentTarget.reset(),localStorage.removeItem(t)}function l(e){const r={email:a.input.value,message:a.textarea.value};localStorage.setItem(t,JSON.stringify(r))}function o(){const e=localStorage.getItem(t),r=JSON.parse(e);e&&(a.input.value=r.email,a.textarea.value=r.message)}a.form.addEventListener("submit",r),a.form.addEventListener("input",(0,e.throttle)(l,500)),o();
 },{"lodash":"B1iE"}]},{},["TTyb"], null)
-//# sourceMappingURL=/goit-js-hw-08/03-feedback.fb695e7f.js.map
+//# sourceMappingURL=/-goit-js-hw-08/03-feedback.fb695e7f.js.map

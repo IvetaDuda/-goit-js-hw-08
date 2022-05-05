@@ -19,4 +19,4 @@ var n,t=arguments[3],r=require("buffer").Buffer;(function(){var r,e=200,u="Unsup
 },{"buffer":"dskh"}],"iiAF":[function(require,module,exports) {
 "use strict";var e=r(require("@vimeo/player")),t=require("lodash");function r(e){return e&&e.__esModule?e:{default:e}}const o=document.querySelector("iframe"),i=new Vimeo.Player(o),n=localStorage.getItem("videoplayer-current-time");n&&i.setCurrentTime(n);const u=function(e){localStorage.setItem("videoplayer-current-time",JSON.stringify(e.seconds))};i.on("timeupdate",(0,t.throttle)(u,1e3));
 },{"@vimeo/player":"zU8P","lodash":"B1iE"}]},{},["iiAF"], null)
-//# sourceMappingURL=/goit-js-hw-08/02-video.aea2e2d8.js.map
+//# sourceMappingURL=/-goit-js-hw-08/02-video.aea2e2d8.js.map
