@@ -13,8 +13,8 @@ dataRecovery();
 function onStorageSubmit(event) {
   event.preventDefault();
   const parsedData = JSON.parse(localStorage.getItem(STORAGE_KEY));
-  const email = refs.form.email.value;
-  const message = refs.form.message.value;
+  const email = event.currentTarget.email.value;
+  const message = event.currentTarget.message.value;
 
   if (email === '' || message === '') {
     return alert('Please fill in all  the fields!');
